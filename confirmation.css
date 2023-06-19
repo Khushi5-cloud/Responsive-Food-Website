@@ -1,0 +1,39 @@
+body
+{
+    background-color: rgb(245, 247, 227);
+    
+}
+#big-box
+{
+    
+    height: 17cm;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#box
+{
+    padding: 3cm;
+    text-align: center;
+    height: 12cm;
+    width: 17cm;
+    background-color: white;
+    justify-content: center;
+}
+h2
+{
+    color: rgb(127, 253, 69);
+    font-family: 'Crete Round', serif;
+}
+.btn
+{
+    
+    background-color: rgb(127, 253, 69);
+    font-family: 'Crete Round', serif;
+}
+.btn:hover
+{
+    background-color: rgb(157, 252, 113);
+    border: 2px solid rgb(127, 253, 69);
+}

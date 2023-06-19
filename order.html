@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Bree+Serif&family=Crete+Round&family=Indie+Flower&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+</head>
+<body>
+    <a href="First.html"><i class="fa fa-arrow-left" style="font-size: 24px; padding:5px;color:black"></i></a>
+    <img src="shopping-cart.png" class="center">
+    <h1><b style="color:red;">O</b>rder <b style="color:rgb(247, 229, 71);">F</b>ood</h1>
+
+    <hr style="height:1px; border-width:1px; color:black; background-color:black; width:20cm;">
+
+    <section id="detail">
+        <h3>Delivery Details <i class="glyphicon glyphicon-list" style="color:rgb(247, 229, 71);"></i></h3>
+        <div id="detail-box">
+            <form>
+                <div class="box"> 
+                    <label for="name">Full Name </label>
+                    <br>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    
+                </div>
+                <div class="box"> 
+                    <br>
+                    <label for="address">Address </label>
+                    <br>
+                    <input type="text" id="address" placeholder="Enter your address">
+                </div>
+                <div class="box">
+                    <br> 
+                    <label for="phone">Phone Number </label>
+                    <br>
+                    <input type="number" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="box"> 
+                    <br>
+                    <label for="email">Email </label>
+                    <br>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="box"> 
+                    <br>
+                    <label for="city">City </label>
+                    <br>
+                    <input type="text" id="city" placeholder="Enter your city">
+                </div>
+                <div class="box"> 
+                    <br>
+                    <label for="state">State </label>
+                    <br>
+                    <input type="text" id="state" placeholder="Enter your state">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="meal">
+        <h3>Meal Choices  <i class="glyphicon glyphicon-cutlery" style="color:red;padding:2px;"></i></h3>
+        <form>
+        <div id="meal-box">
+            <div class="box">
+                <label for="food">Food</label>
+                <br>
+                <select id="food">
+                    <option value="none" selected disabled>Select</option>
+                    <option value="pizza">Pizza</option>
+                    <option value="burger">Burger</option>
+                    <option value="hotdog">Hotdog</option>
+                    <option value="muffins">Muffins</option>
+                </select>
+                <br>
+                <br>
+                <label for="quantity">Quantity</label>
+                <br>
+                <input type="number" id="quantity" style="width: 40px;" oninput="totalAmount()">
+                <br>
+                <br>
+                Total Bill:
+                <span id="ans"></span>
+            </div> 
+        </div>
+        </form>
+    </section>
+
+    <div id="btn">
+    <button id="b1" onclick="window.location.href='confirmation.html'">Submit</button>
+    </div>
+
+    <footer>
+        <div class="footer">
+            Copyright &copy; www.foodie.com. All rights reserved.
+
+        </div>
+    </footer>
+    
+</body>
+</html>
